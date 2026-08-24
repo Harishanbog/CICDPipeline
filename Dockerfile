@@ -7,5 +7,5 @@ WORKDIR /address
 COPY requirements.txt .
 
 
-#Install dependencies
+#Install dependencies listed in requirements file
 RUN pip install --no-cache-dir -r requirements.txt
