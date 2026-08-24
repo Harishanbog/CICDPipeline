@@ -19,7 +19,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: azureuser
           key: ${{ secrets.SSH_KEY }}
-          script:
+          script: |
             cd /home/azureuser/address
             git pull
             docker compose up -d --build
