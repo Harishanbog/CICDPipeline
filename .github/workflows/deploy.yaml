@@ -21,5 +21,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/azureuser
-            git pull
+            git clone ${{ secrets.GIT_REPO }}
             docker compose up -d --build
